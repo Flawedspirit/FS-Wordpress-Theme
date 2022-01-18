@@ -1,0 +1,38 @@
+@mixin button($bg-color, $fg-color: #fff) {
+    background-image: linear-gradient(to bottom, $bg-color, darken($bg-color, 20%));
+    border: 1px solid darken($bg-color, 12%);
+    color: $fg-color;
+
+    &:hover:not(:disabled):not(.disabled) {
+        background-image: linear-gradient(to bottom, lighten($bg-color, 5%), darken($bg-color, 15%));
+        border: 1px solid darken($bg-color, 20%);
+        color: $fg-color;
+    }
+
+    &:active:not(:disabled):not(.disabled) {    
+        background-image: linear-gradient(to bottom, darken($bg-color, 10%), $bg-color);
+        border: 1px solid darken($bg-color, 20%);
+        color: $fg-color;    
+    }
+}
+
+@mixin button-flat($bg-color, $fg-color: #fff) {
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+    color: $fg-color;
+
+    &:hover:not(:disabled):not(.disabled),
+    &:active:not(:disabled):not(.disabled) {
+        background-color: lighten($bg-color, 5%);
+        border: 1px solid darken($bg-color, 20%);
+        color: $fg-color;
+    }
+}
+
+@mixin drop-shadow($length1, $blur1, $alpha1, $length2: $length1, $blur2: $blur1, $alpha2: 0.20) {
+    box-shadow: 0 $length1 $blur1 rgba(0,0,0, $alpha1), 0 $length2 $blur2 rgba(0,0,0, $alpha2);
+}
+
+@mixin drop-shadow-inset($length1, $blur1, $alpha1, $length2: $length1, $blur2: $blur1, $alpha2: 0.20) {
+    box-shadow: 0 $length1 $blur1 rgba(0,0,0, $alpha1) inset, 0 $length2 $blur2 rgba(0,0,0, $alpha2) inset;
+}

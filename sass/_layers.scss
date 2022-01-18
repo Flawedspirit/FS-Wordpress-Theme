@@ -1,0 +1,59 @@
+.shadow-0dp {
+    @include drop-shadow(2px, 4px, 0.15);
+}
+
+.shadow-1dp {
+    @include drop-shadow(3px, 6px, 0.15);
+}
+
+.shadow-2dp {
+    @include drop-shadow(10px, 20px, 0.20, 6px, 6px);
+}
+
+.shadow-3dp {
+    @include drop-shadow(15px, 28px, 0.25, 10px, 10px);
+}
+
+.shadow-4dp {
+    @include drop-shadow(20px, 38px, 0.30, 15px, 12px);
+}
+
+.shadow-inverse-0dp {
+    @include drop-shadow(-1px, 4px, 0.15);
+}
+
+.shadow-inverse-1dp {
+    @include drop-shadow(-2px, 6px, 0.15);
+}
+
+.shadow-inverse-2dp {
+    @include drop-shadow(-5px, 20px, 0.20, -3px, 6px);
+}
+
+.shadow-inverse-3dp {
+    @include drop-shadow(-8px, 28px, 0.25, -5px, 10px);
+}
+
+.shadow-inverse-4dp {
+    @include drop-shadow(-10px, 38px, 0.30, -8px, 12px);
+}
+
+.shadow-inset-0dp {
+    @include drop-shadow-inset(2px, 4px, 0.15);
+}
+
+.shadow-inset-1dp {
+    @include drop-shadow-inset(3px, 6px, 0.15);
+}
+
+.shadow-inset-2dp {
+    @include drop-shadow-inset(10px, 20px, 0.20, 6px, 6px);
+}
+
+.shadow-inset-3dp {
+    @include drop-shadow-inset(15px, 28px, 0.25, 10px, 10px);
+}
+
+.shadow-inset-4dp {
+    @include drop-shadow-inset(20px, 38px, 0.30, 15px, 12px);
+}

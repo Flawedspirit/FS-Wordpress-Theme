@@ -1,0 +1,103 @@
+.btn {
+    &:disabled,
+    &.disabled {
+        cursor: not-allowed;
+        text-decoration: none;
+    }
+}
+
+.btn-primary,
+.btn-primary.disabled,
+.btn-primary:disabled {
+    @include button($primary-color);
+}
+
+.btn-secondary,
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+    @include button($second-color);
+}
+
+.btn-success,
+.btn-success.disabled,
+.btn-success:disabled {
+    @include button($success-color);
+}
+
+.btn-danger,
+.btn-danger.disabled,
+.btn-danger:disabled {
+    @include button($danger-color);
+}
+
+.btn-warning,
+.btn-warning.disabled,
+.btn-warning:disabled {
+    @include button($warning-color, #000);
+}
+
+.btn-info,
+.btn-info.disabled,
+.btn-info:disabled {
+    @include button($info-color);
+}
+
+.btn-light,
+.btn-light.disabled,
+.btn-light:disabled {
+    @include button($light-color, #000);
+}
+
+.btn-dark,
+.btn-dark.disabled,
+.btn-dark:disabled {
+    @include button($dark-color);
+}
+
+.btn-flat-primary,
+.btn-flat-primary.disabled,
+.btn-flat-primary:disabled {
+    @include button-flat($primary-color);
+}
+
+.btn-flat-secondary,
+.btn-flat-secondary.disabled,
+.btn-flat-secondary:disabled {
+    @include button-flat($second-color);
+}
+
+.btn-flat-success,
+.btn-flat-success.disabled,
+.btn-flat-success:disabled {
+    @include button-flat($success-color);
+}
+
+.btn-flat-danger,
+.btn-flat-danger.disabled,
+.btn-flat-danger:disabled {
+    @include button-flat($danger-color);
+}
+
+.btn-flat-warning,
+.btn-flat-warning.disabled,
+.btn-flat-warning:disabled {
+    @include button-flat($warning-color, #000);
+}
+
+.btn-flat-info,
+.btn-flat-info.disabled,
+.btn-flat-info:disabled {
+    @include button-flat($info-color);
+}
+
+.btn-flat-light,
+.btn-flat-light.disabled,
+.btn-flat-light:disabled {
+    @include button-flat($light-color, #000);
+}
+
+.btn-flat-dark,
+.btn-flat-dark.disabled,
+.btn-flat-dark:disabled {
+    @include button-flat($dark-color);
+}

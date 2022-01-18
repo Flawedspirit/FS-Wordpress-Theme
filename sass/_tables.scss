@@ -1,0 +1,51 @@
+.table {
+    border-radius: 0.25rem;
+    color: $light-color;
+}
+
+.wp-block-table {
+    background-color: transparentize($dark-color, 0.25);
+
+    td,
+    th,
+    thead th {
+        border-top: none;
+    }
+
+    tr {
+        &:first-of-type {
+            border-bottom: 2px solid $dark-color;
+        }
+
+        &:not(tr:last-of-type) {
+            border-bottom: 1px solid $dark-color;
+        }
+    }
+}
+
+.table-light {
+    color: $dark-color;
+    background-color: transparentize($light-color, 0.25);
+
+    td,
+    th,
+    thead th {
+        border-top: none;
+    }
+
+    tr {
+        &:first-of-type {
+            border-bottom: 2px solid $light-bg-color;
+        }
+
+        &:not(tr:last-of-type) {
+            border-bottom: 1px solid $light-bg-color;
+        }
+    }
+}
+
+.table-striped {
+    tbody tr:nth-of-type(odd) {
+        background-color: rgba(255,255,255,0.1);
+    }
+}
